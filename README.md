@@ -4,6 +4,8 @@
 
 An OpenCode plugin that handles Gemini API `429` rate-limit responses by honoring Google's suggested retry delay and adding a small random buffer. It is intended for OpenCode users who run Gemini-powered agents and occasionally hit short-lived request quotas.
 
+![alt text](img/image.png)
+
 ## How it works
 
 The plugin registers OpenCode's session `retry` hook and changes the retry decision only when all of these are true:
